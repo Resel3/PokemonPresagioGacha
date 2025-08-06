@@ -1,0 +1,10 @@
+ BANNERS  = {
+      "banner_1" => {
+              "name" => "PRUEBA1",
+              "bg" => "Graphics/Pictures/Terranova",
+              "rewards" => ["Graphics/Battlers/Front/1028","Graphics/Battlers/Front/1028","Graphics/Battlers/Front/1028"],
+              "stars" => [4, 5, 4],
+              "url" => "",
+              "descr" =>  "Descripción"
+              }
+      }
