@@ -1,11 +1,12 @@
  BANNERS  = {
       "banner_1" => {
-              "name" => "Nombre",
+              "name" => "ESPECIAL LANZAMIENTO DEL JUEGO",
               "bg" => "Graphics/Pictures/Terranova",
               "rewards" => ["Graphics/Battlers/Front/025","Graphics/Battlers/Front/026","Graphics/Battlers/Front/027"],
-              "stars" => [4, 5, 4],
+              "stars" => [4, 4],
               "url" => "",
               "descr" =>  "Descripción"
               }
       }
+
 
