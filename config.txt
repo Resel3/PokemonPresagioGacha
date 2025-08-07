@@ -5,8 +5,9 @@
               "rewards" => ["Graphics/Battlers/Front/025","Graphics/Battlers/Front/447","Graphics/Battlers/Front/035"],
               "stars" => [4, 4, 4],
               "url" => "",
-             "descr" => <<~HTML
+             "descr" =>
       <ac><b>¡Banner de tiempo limitado por el lanzamiento del juego!</b></ac>
+
       <ac>Disponible hasta el <c2=043c3aff>25-2-2027</c2>
 
       <u><b>Premios obtenibles:</b></u>
@@ -28,9 +29,9 @@
       *Clefairy de celebración 10%*</ac>
 
       No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad.</ac>
-    HTML
               }
       }
+
 
 
 
