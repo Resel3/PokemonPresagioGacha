@@ -6,15 +6,5 @@ BANNERS = {
     "stars" => [4, 4],
     "url" => "https://raw.githubusercontent.com/Resel3/PokemonPresagioGacha/refs/heads/main/banner_1?token=GHSAT0AAAAAADIX7TDQBW3ULZTIL3XJDYGO2EUTRFA",
     "descr" => "Banner especial por el lanzamiento de Pokémon Presagio. En este Banner podrás obtener dos Pokémon especiales: Un Pikachu y un Clefairy con el movimiento celebración. Este banner dejará de estar disponible el x-x-x."
-  },
-
-  "banner_2" => {
-    "name" => "PRUEBA1",
-    "bg" => "Graphics/Pictures/Terranova",
-    "rewards" => ["Graphics/Battlers/Front/1028", "Graphics/Battlers/Front/1028", "Graphics/Battlers/Front/1028"],
-    "stars" => [4, 5, 4],
-    "url" => "",
-    "descr" => "Descripción"
   }
 }
-
