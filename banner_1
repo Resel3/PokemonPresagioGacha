@@ -43,5 +43,4 @@ poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
     poke.setAbility(0)
     poke.calcStats
     pokeReward(poke, 4)
-
 end
