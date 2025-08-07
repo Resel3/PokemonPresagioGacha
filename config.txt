@@ -6,31 +6,30 @@
               "stars" => [4, 4, 4],
               "url" => "",
              "descr" =>
-      <ac><b>¡Banner de tiempo limitado por el lanzamiento del juego!</b></ac>
+     "<ac><b>¡Banner de tiempo limitado por el lanzamiento del juego!</b></ac><ac>Disponible hasta el <c2=043c3aff>25-2-2027</c2>
 
-      <ac>Disponible hasta el <c2=043c3aff>25-2-2027</c2>
+<u><b>Premios obtenibles:</b></u>
+*<c2=104000ff>COMÚN</c2>*
+*Poké Ball 11.5%*
+*Superpoción 11.5%*
+*<c2=400000ff>RARO</c2>*
+*Super Ball 28%*
+*Cura Total 28%*
+*Superrepelente 28%*
+*<c2=800080ff>ÉPICO</c2>*
+*Braixen 6%*
+*Eldegoss 4.5%*
+*Sableye 4.5%*
+*Doublade 4.5%*
+*<c2=2050a0ff>LEGENDARIO</c2>*
+*Pikachu de celebración 10%*
+*Riolu de celebración 10%*
+*Clefairy de celebración 10%*</ac>
 
-      <u><b>Premios obtenibles:</b></u>
-      *<c2=104000ff>COMÚN</c2>*
-      *Poké Ball 11.5%*
-      *Superpoción 11.5%*
-      *<c2=400000ff>RARO</c2>*
-      *Super Ball 28%*
-      *Cura Total 28%*
-      *Superrepelente 28%*
-      *<c2=800080ff>ÉPICO</c2>*
-      *Braixen 6%*
-      *Eldegoss 4.5%*
-      *Sableye 4.5%*
-      *Doublade 4.5%*
-      *<c2=2050a0ff>LEGENDARIO</c2>*
-      *Pikachu de celebración 10%*
-      *Riolu de celebración 10%*
-      *Clefairy de celebración 10%*</ac>
-
-      No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad.</ac>
+No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad.</ac>"
               }
       }
+
 
 
 
