@@ -1,5 +1,13 @@
  BANNERS  = {
       "banner_1" => {
+              "name" => "BANNER ESPECIAL POR LANZAMIENTO",
+              "bg" => "Graphics/Pictures/Terranova",
+              "rewards" => ["Graphics/Battlers/Front/025","Graphics/Battlers/Front/035"],
+              "stars" => [4, 4],
+              "url" => "",
+              "descr" =>  "Banner especial por el lanzamiento de Pokémon Presagio. En este Banner podrás obtener dos Pokémon especiales: Un Pikachu y un Clefairy con el movimiento celebración. Este banner dejará de estar disponible el x-x-x."
+              }
+      "banner_2" => {
               "name" => "PRUEBA1",
               "bg" => "Graphics/Pictures/Terranova",
               "rewards" => ["Graphics/Battlers/Front/1028","Graphics/Battlers/Front/1028","Graphics/Battlers/Front/1028"],
@@ -7,4 +15,5 @@
               "url" => "",
               "descr" =>  "Descripción"
               }
+
       }
