@@ -5,12 +5,13 @@
               "rewards" => ["Graphics/Battlers/Front/025","Graphics/Battlers/Front/447","Graphics/Battlers/Front/035"],
               "stars" => [4, 4, 4],
               "url" => "",
-             "descr" => "¡Banner de tiempo limitado por el lanzamiento del juego!\nDisponible hasta el <c2=043c3aff>25-2-2027</c2>\n<u>Premios disponibles:</u>\n<c=008000FF>COMÚN</c>\n*Poké Ball 11.5%*\n*Superpoción 
-11.5%*\n<c=0000FFFF>RARO</c>\n*Super Ball 28%*\n*Cura Total 28%*\n*Superrepelente 28%*\n<c=800080FF>ÉPICO</c>\n*Braixen 6%*\n*Eldegoss 4.5%*\n*Sableye 4.5%*\n*Doublade 4.5%*\n<c=FFA500FF>LEGENDARIOsuper</c>\n*Pikachu de celebración 10%*\n*Riolu decelebración 
+             "descr" => "¡BANNER DE TIEMPO LIMITADO POR EL LANZAMIENTO DEL JUEGO!\nDisponible hasta el <c2=043c3aff>25-2-2027</c2>\n<u>Premios disponibles:</u>\n<c=008000FF>COMÚN</c>\n*Poké Ball 11.5%*\n*Superpoción 
+11.5%*\n<c=0000FFFF>RARO</c>\n*Super Ball 28%*\n*Cura Total 28%*\n*Superrepelente 28%*\n<c=800080FF>ÉPICO</c>\n*Braixen 6%*\n*Eldegoss 4.5%*\n*Sableye 4.5%*\n*Doublade 4.5%*\n\n<c=FFA500FF>LEGENDARIO</c>\n*Pikachu de celebración 10%*\n*Riolu decelebración 
 10%*\n*Clefairy de celebración 10%*\nNo nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
 
               }
       }
+
 
 
 
