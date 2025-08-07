@@ -2,9 +2,10 @@
       "banner_1" => {
               "name" => "Nombre",
               "bg" => "Graphics/Pictures/Terranova",
-              "rewards" => ["Graphics/025","Graphics/Battlers/Front/026","Graphics/Battlers/Front/027"],
+              "rewards" => ["Graphics/Battlers/Front/025","Graphics/Battlers/Front/026","Graphics/Battlers/Front/027"],
               "stars" => [4, 5, 4],
               "url" => "",
               "descr" =>  "Descripción"
               }
       }
+
