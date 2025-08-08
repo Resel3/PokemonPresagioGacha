@@ -1,15 +1,23 @@
 prob = rand(100)
 case prob
 #############################################
-# Tier 1 con un 35%
+# Tier 1 con un 45%
 #############################################
-when (0...35) 
+when (0...45) 
 	result = rand(10)
+itemReward(:POKEBALL)
+else
+itemReward(:SUPERPOTION)
 #############################################
-# Tier 2 con un 40%
+# Tier 2 con un 30%
 #############################################
-when (35...75) 
+when (45...75) 
 	result = rand(10)
+itemReward(:GREATBALL)
+else
+itemReward(:FULLHEAL)
+else
+itemReward(:POKEBALL)
 #############################################
 # Tier 3 con un 15%
 #############################################
