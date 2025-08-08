@@ -6,7 +6,7 @@
               "stars" => [4, 4, 4],
               "url" => "https://resel3.github.io/PokemonPresagioGacha/banner_1",
              "descr" => "¡BANNER DE TIEMPO LIMITADO POR EL LANZAMIENTO DEL JUEGO!\nDisponible hasta el <c2=043c3aff>25-2-2027</c2>\n<u>Premios disponibles:</u>\n<c=008000FF>COMÚN</c>\n<c=000000FF>Poké Ball 22.5%\nSuperpoción 22.5%</c>\n<c=0000FFFF>RARO</c>
-<c=000000FF>Super Ball 10%\n<c=000000FF>Cura Total 10%\nSuperrepelente 10%</c>\n<c=800080FF>ÉPICO</c>\n<c=008000FF>Braixen 3.75%\nEldegoss 3.75%\nSableye 3.75%\nDoublade 3.75%</c>\n<c=FFA500FF>LEYENDA</c>\n<c=000000FF>Pikachu de celebración 3.3%\nRiolu de celebración 3.4%
+<c=000000FF>Super Ball 10%\nCura Total 10%\nSuperrepelente 10%</c>\n<c=800080FF>ÉPICO</c>\n<c=000000FF>Braixen 3.75%\nEldegoss 3.75%\nSableye 3.75%\nDoublade 3.75%</c>\n<c=FFA500FF>LEYENDA</c>\n<c=000000FF>Pikachu de celebración 3.3%\nRiolu de celebración 3.4%
 Clefairy de celebración 3.3%</c>
 
 No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
