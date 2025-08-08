@@ -1,64 +1,66 @@
 def banner_1
-prob = rand(100)
-case prob
-#############################################
-# Tier 1 con un 45%
-#############################################
-when (0...45) 
-	result = rand(10)
-itemReward(:POKEBALL)
-else
-itemReward(:SUPERPOTION)
-end
-#############################################
-# Tier 2 con un 30%
-#############################################
-when (45...75) 
-	result = rand(10)
-itemReward(:GREATBALL)
-else
-itemReward(:FULLHEAL)
-else
-itemReward(:SUPERREPEL)
-end
-#############################################
-# Tier 3 con un 15%
-#############################################
-when (75...90) 
-	result = rand(10)
-poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
-else
-poke = PokeBattle_Pokemon.new(:SABLEYE, 20, $Trainer)
-else
-poke = PokeBattle_Pokemon.new(:DOUBLADE, 35, $Trainer)
-end
-#############################################
-# Tier 4 con un 10%
-#############################################
-when (90...100) 
-	result = rand(10)
-poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
-    poke.iv = [18, 15, 21, 2, 9, 30]
-    poke.pbLearnMove(:CELEBRATE)
-    poke.pbLearnMove(:SPARK)
-    poke.pbLearnMove(:THUNDERSHOCK)
-    poke.pbLearnMove(:QUICKATTACK)
-    poke.setNature(:JOLLY)
-    poke.setItem(:AMULETCOIN)
-    poke.setAbility(0)
-    poke.calcStats
+  prob = rand(100)
+  result = rand(10)
+
+  case prob
+  #############################################
+  # Tier 1 con un 45%
+  #############################################
+  when 0...45
+    if result < 5
+      itemReward(:POKEBALL)
+    else
+      itemReward(:SUPERPOTION)
+    end
+
+  #############################################
+  # Tier 2 con un 30%
+  #############################################
+  when 45...75
+    if result < 5
+      itemReward(:GREATBALL)
+    else
+      itemReward(:FULLHEAL)
+    end
+
+  #############################################
+  # Tier 3 con un 15%
+  #############################################
+  when 75...90
+    if result < 5
+      poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
+    else
+      poke = PokeBattle_Pokemon.new(:SABLEYE, 20, $Trainer)
+    end
+    pokeReward(poke, 3)
+
+  #############################################
+  # Tier 4 con un 10%
+  #############################################
+  when 90...100
+    if result < 5
+      poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
+      poke.iv = [18, 15, 21, 2, 9, 30]
+      poke.pbLearnMove(:CELEBRATE)
+      poke.pbLearnMove(:SPARK)
+      poke.pbLearnMove(:THUNDERSHOCK)
+      poke.pbLearnMove(:QUICKATTACK)
+      poke.setNature(:JOLLY)
+      poke.setItem(:AMULETCOIN)
+      poke.setAbility(0)
+      poke.calcStats
+    else
+      poke = PokeBattle_Pokemon.new(:CLEFAIRY, 20, $Trainer)
+      poke.iv = [16, 17, 14, 13, 10, 6]
+      poke.pbLearnMove(:CELEBRATE)
+      poke.pbLearnMove(:POUND)
+      poke.pbLearnMove(:SWEETKISS)
+      poke.pbLearnMove(:METRONOME)
+      poke.setNature(:JOLLY)
+      poke.setItem(:AMULETCOIN)
+      poke.setAbility(0)
+      poke.calcStats
+    end
     pokeReward(poke, 4)
-  else
-    poke = PokeBattle_Pokemon.new(:CLEFAIRY, 20, $Trainer)
-    poke.iv = [16, 17, 14, 13, 10, 6]
-    poke.pbLearnMove(:CELEBRATE)
-    poke.pbLearnMove(:POUND)
-    poke.pbLearnMove(:SWEETKISS)
-    poke.pbLearnMove(:METRONOME)
-    poke.setNature(:JOLLY)
-    poke.setItem(:AMULETCOIN)
-    poke.setAbility(0)
-    poke.calcStats
-    pokeReward(poke, 4)
- end
+  end
 end
