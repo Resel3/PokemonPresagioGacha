@@ -1,3 +1,4 @@
+def banner_1
 prob = rand(100)
 case prob
 #############################################
@@ -19,7 +20,6 @@ else
 itemReward(:FULLHEAL)
 else
 itemReward(:SUPERREPEL)
- end
 end
 #############################################
 # Tier 3 con un 15%
@@ -31,7 +31,6 @@ else
 poke = PokeBattle_Pokemon.new(:SABLEYE, 20, $Trainer)
 else
 poke = PokeBattle_Pokemon.new(:DOUBLADE, 35, $Trainer)
- end
 end
 #############################################
 # Tier 4 con un 10%
@@ -61,4 +60,5 @@ poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
     poke.setAbility(0)
     poke.calcStats
     pokeReward(poke, 4)
+ end
 end
