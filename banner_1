@@ -1,39 +1,52 @@
 prob = rand(100)
+
 case prob
-#############################################
-# Tier 1 con un 35%
-#############################################
-when (0...35) 
-	result = rand(10)
-itemReward(:POKEBALL) # Premio 1: Pokébola
-  else
-    itemReward(:SUPERPOTION) # Premio 2: Superpoción
-  end
-#############################################
-# Tier 2 con un 40%
-#############################################
-when (35...75) 
-	result = rand(10)
-#############################################
-# Tier 3 con un 15%
-#############################################
-when (75...90) 
-	result = rand(10)
-#############################################
-# Tier 4 con un 7%
-#############################################
-when (90...97) 
-	result = rand(10)
-#############################################
-# Tier 5 con un 3%
-#############################################
-when (97...100) 
-	result = rand(10)
+
+###################################################
+# Tier 1 (40% de probabilidad)
+###################################################
+when (0...40)
+  # Premio: Pikachu personalizado
+  poke = PokeBattle_Pokemon.new(:PIKACHU, 25, $Trainer)
+  poke.ev[PBStats::ATTACK] = 100
+  poke.ev[PBStats::SPATK] = 100
+  poke.ev[PBStats::SPEED] = 100
+  poke.pbLearnMove(:THUNDERSHOCK)
+  poke.pbLearnMove(:QUICKATTACK)
+  poke.pbLearnMove(:ELECTROBALL)
+  poke.pbLearnMove(:IRONTAIL)
+  poke.calcStats
+  pokeReward(poke, 1)
+
+###################################################
+# Tier 2 (30% de probabilidad)
+###################################################
+when (40...70)
+  # Premio: Sandshrew personalizado
+  poke = PokeBattle_Pokemon.new(:SANDSHREW, 20, $Trainer)
+  poke.ev[PBStats::HP] = 252
+  poke.ev[PBStats::ATTACK] = 252
+  poke.calcStats
+  pokeReward(poke, 2)
+
+###################################################
+# Tier 3 (15% de probabilidad)
+###################################################
+when (70...85)
+  # Premio: Master Ball
+  itemReward(:MASTERBALL, 3)
+
+###################################################
+# Tier 4 (10% de probabilidad)
+###################################################
+when (85...95)
+  # Premio: Pokeball
+  itemReward(:POKEBALL, 4)
+
+###################################################
+# Tier 5 (5% de probabilidad)
+###################################################
+when (95...100)
+  # Premio: Poción
+  itemReward(:POTION, 5)
 end
-
-
-
-
-
-
-
