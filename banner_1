@@ -17,12 +17,17 @@ itemReward(:GREATBALL)
 else
 itemReward(:FULLHEAL)
 else
-itemReward(:POKEBALL)
+itemReward(:SUPERREPEL)
 #############################################
 # Tier 3 con un 15%
 #############################################
 when (75...90) 
 	result = rand(10)
+poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
+else
+poke = PokeBattle_Pokemon.new(:SABLEYE, 20, $Trainer)
+else
+poke = PokeBattle_Pokemon.new(:DOUBLADE, 35, $Trainer)
 #############################################
 # Tier 4 con un 10%
 #############################################
