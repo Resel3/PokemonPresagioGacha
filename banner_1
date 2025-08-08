@@ -1,8 +1,10 @@
-def banner_1
   prob = rand(100)
   result = rand(10)
 
   case prob
+  #############################################
+  # Tier 1 con un 45%
+  #############################################
   when 0...45
     if result < 5
       itemReward(:POKEBALL)
@@ -10,6 +12,9 @@ def banner_1
       itemReward(:SUPERPOTION)
     end
 
+  #############################################
+  # Tier 2 con un 30%
+  #############################################
   when 45...75
     if result < 5
       itemReward(:GREATBALL)
@@ -17,6 +22,9 @@ def banner_1
       itemReward(:FULLHEAL)
     end
 
+  #############################################
+  # Tier 3 con un 15%
+  #############################################
   when 75...90
     if result < 5
       poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
@@ -25,6 +33,9 @@ def banner_1
     end
     pokeReward(poke, 3)
 
+  #############################################
+  # Tier 4 con un 10%
+  #############################################
   when 90...100
     if result < 5
       poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
