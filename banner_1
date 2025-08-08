@@ -3,7 +3,7 @@ case prob
 #############################################
 # COMÚN con un 45%
 #############################################
-when (0...45)
+when 0...45
   result = rand(10)
   if result < 5
     itemReward(:POKEBALL) # Premio 1: Pokébola
@@ -14,7 +14,7 @@ when (0...45)
 #############################################
 # RARO con un 30%
 #############################################
-when (45...75)
+when 45...75
   result = rand(10)
   if result < 5
     itemReward(:GREATBALL) # Premio 1: Great Ball
@@ -25,7 +25,7 @@ when (45...75)
 #############################################
 # ÉPICO con un 15%
 #############################################
-when (75...90)
+when 75...90
   result = rand(10)
   if result < 5
     poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
@@ -37,7 +37,7 @@ when (75...90)
 #############################################
 # LEGENDARIO con un 10%
 #############################################
-when (90...100)
+when 90...100
   result = rand(10)
   if result < 5
     poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
