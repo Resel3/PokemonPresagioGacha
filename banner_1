@@ -8,6 +8,7 @@ when (0...45)
 itemReward(:POKEBALL)
 else
 itemReward(:SUPERPOTION)
+end
 #############################################
 # Tier 2 con un 30%
 #############################################
@@ -18,6 +19,8 @@ else
 itemReward(:FULLHEAL)
 else
 itemReward(:SUPERREPEL)
+ end
+end
 #############################################
 # Tier 3 con un 15%
 #############################################
@@ -28,6 +31,8 @@ else
 poke = PokeBattle_Pokemon.new(:SABLEYE, 20, $Trainer)
 else
 poke = PokeBattle_Pokemon.new(:DOUBLADE, 35, $Trainer)
+ end
+end
 #############################################
 # Tier 4 con un 10%
 #############################################
