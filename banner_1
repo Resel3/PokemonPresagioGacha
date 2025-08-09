@@ -4,7 +4,7 @@ case prob
   # COMÚN
   #############################################
   when (0...40)
-    if rand(2) == 0
+    result = rand(10)
       itemReward(:POKEBALL, 1)
      else
       itemReward(:SUPERPOTION, 1)
@@ -13,7 +13,7 @@ case prob
   # RARO
   #############################################
   when (40...75)
-    if rand(2) == 0
+    result = rand(10)
       itemReward(:GREATBALL, 2)
      else
       itemReward(:FULLHEAL, 2)
@@ -33,7 +33,7 @@ case prob
   # LEGENDARIO
   #############################################
   when (90...100)
-    if rand(2) == 0
+    result = rand(10)
       poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
       poke.iv = [18, 15, 21, 2, 9, 31]
       poke.pbLearnMove(:CELEBRATE)
