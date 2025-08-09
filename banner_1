@@ -5,22 +5,22 @@ case prob
 #############################################
 when (0...41) 
 	result = rand(10)
-if result > 5
-scene.itemReward(:POKEBALL,1)
-else
-scene.itemReward(:FULLHEAL,1)
+ if result > 5
+ scene.itemReward(:POKEBALL,1)
+ else
+ scene.itemReward(:FULLHEAL,1)
 #############################################
 # Tier 2 con un 30%
 #############################################
 when (41...71) 
-	result = rand(10)
+   result = rand(10)
 #############################################
 # Tier 3 con un 20%
 #############################################
 when (71...91) 
-	result = rand(10)
+   result = rand(10)
 #############################################
 # Tier 4 con un 9%
 #############################################
 when (91...100) 
-	result = rand(10)
+   result = rand(10)
