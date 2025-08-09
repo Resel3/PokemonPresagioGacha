@@ -1,28 +1,19 @@
- prob = rand(100)
-  case prob
-  #############################################
-  # Tier 1 con un 35%
-  #############################################
+prob = rand(100)
+case prob
   when (0...35)
     if rand(2) == 0
       itemReward(:POKEBALL, 1)
     else
       itemReward(:SUPERPOTION, 1)
- end
-end
-  #############################################
-  # Tier 2 con un 40%
-  #############################################
+    end
+
   when (35...75)
     if rand(2) == 0
       itemReward(:GREATBALL, 2)
     else
       itemReward(:FULLHEAL, 2)
- end
-end
-  #############################################
-  # Tier 3 con un 15%
-  #############################################
+    end
+
   when (75...90)
     if rand(2) == 0
       poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
@@ -30,13 +21,11 @@ end
     else
       poke = PokeBattle_Pokemon.new(:SABLEYE, 20, $Trainer)
       pokeReward(poke, 3)
-     end
-   end
-  #############################################
-  # Tier 4 con un 7%
-  #############################################
+    end
+
   when (90...97)
     if rand(2) == 0
+      # Pikachu
       poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
       poke.iv = [18, 15, 21, 2, 9, 30]
       poke.pbLearnMove(:CELEBRATE)
@@ -49,6 +38,7 @@ end
       poke.calcStats
       pokeReward(poke, 4)
     else
+      # Clefairy
       poke = PokeBattle_Pokemon.new(:CLEFAIRY, 20, $Trainer)
       poke.iv = [16, 17, 14, 13, 10, 6]
       poke.pbLearnMove(:CELEBRATE)
@@ -60,11 +50,8 @@ end
       poke.setAbility(0)
       poke.calcStats
       pokeReward(poke, 4)
-  end
- end
-  #############################################
-  # Tier 5 con un 3%
-  #############################################
+    end
+
   when (97...100)
     result = rand(10)
     if (0..3).include?(result)
@@ -83,7 +70,7 @@ end
       poke.ev[PBStats::ATTACK] = 252
       poke.ev[PBStats::SPEED] = 188
       poke.setItem(:LEFTOVERS)
-      poke.setNature(:INTIMIDATE)
+      poke.setNature(:INTIMIDATE) # ojo: Nature e Intimidate no son lo mismo, puede que aquí esté mal
       poke.pbLearnMove(:DRAGONDANCE)
       poke.calcStats
       pokeReward(poke, 5)
@@ -100,5 +87,4 @@ end
     else
       itemReward(:MASTERBALL, 5)
     end
-  end
 end
