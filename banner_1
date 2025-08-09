@@ -1,73 +1,29 @@
 prob = rand(100)
 case prob
-  #############################################
-  # COMÚN
-  #############################################
-  when (0...40)
-    result = rand(10)
-      itemReward(:POKEBALL, 1)
-  else
-      itemReward(:SUPERPOTION, 1)
-    end
-  #############################################
-  # RARO
-  #############################################
-  when (40...75)
-    result = rand(10)
-      itemReward(:GREATBALL, 2)
-     else
-      itemReward(:FULLHEAL, 2)
-    end
-  #############################################
-  # ÉPICO
-  #############################################
-  when (75...90)
-    if rand(2) == 0
-      poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
-      pokeReward(poke, 3)
-     else
-      poke = PokeBattle_Pokemon.new(:SABLEYE, 20, $Trainer)
-      pokeReward(poke, 3)
-    end
-  #############################################
-  # LEGENDARIO
-  #############################################
-  when (90...100)
-    result = rand(10)
-      poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
-      poke.iv = [18, 15, 21, 2, 9, 31]
-      poke.pbLearnMove(:CELEBRATE)
-      poke.pbLearnMove(:SPARK)
-      poke.pbLearnMove(:THUNDERSHOCK)
-      poke.pbLearnMove(:QUICKATTACK)
-      poke.setNature(:JOLLY)
-      poke.setItem(:AMULETCOIN)
-      poke.setAbility(0)
-      poke.calcStats
-      pokeReward(poke, 4)
-    else
-      poke = PokeBattle_Pokemon.new(:CLEFAIRY, 20, $Trainer)
-      poke.iv = [16, 17, 31, 13, 10, 6]
-      poke.pbLearnMove(:CELEBRATE)
-      poke.pbLearnMove(:POUND)
-      poke.pbLearnMove(:SWEETKISS)
-      poke.pbLearnMove(:METRONOME)
-      poke.setNature(:JOLLY)
-      poke.setItem(:AMULETCOIN)
-      poke.setAbility(0)
-      poke.calcStats
-      pokeReward(poke, 4)
-    else
-      poke = PokeBattle_Pokemon.new(:RIOLU, 20, $Trainer)
-      poke.iv = [14, 10, 19, 15, 19, 31]
-      poke.pbLearnMove(:CELEBRATE)
-      poke.pbLearnMove(:QUICKATTACK)
-      poke.pbLearnMove(:FEINT)
-      poke.pbLearnMove(:ENDURE)
-      poke.setNature(:JOLLY)
-      poke.setItem(:AMULETCOIN)
-      poke.setAbility(0)
-      poke.calcStats
-      pokeReward(poke, 4)
-    end
- end
+#############################################
+# Tier 1 con un 35%
+#############################################
+when (0...35) 
+	result = rand(10)
+itemReward(:MAXETHER,4)
+#############################################
+# Tier 2 con un 40%
+#############################################
+when (35...75) 
+	result = rand(10)
+#############################################
+# Tier 3 con un 15%
+#############################################
+when (75...90) 
+	result = rand(10)
+#############################################
+# Tier 4 con un 7%
+#############################################
+when (90...97) 
+	result = rand(10)
+#############################################
+# Tier 5 con un 3%
+#############################################
+when (97...100) 
+	result = rand(10)
+end
