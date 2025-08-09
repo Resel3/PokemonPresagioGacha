@@ -1,78 +1,74 @@
 prob = rand(100)
 case prob
 #############################################
-# Tier 1 con un 40%
+# Tier 1 con un 41%
 #############################################
-when (0...40) 
+when (0...41) 
 	result = rand(10)
-   if (0...5).include?(result)
-    itemReward(:POKEBALL,1)
-    else
-    itemReward(:SUPERPOTION,1)
-    end
-   end
+if (0...5).include?(result)
+itemReward(:POKEBALL,1)
+else
+itemReward(:FULLHEAL,1)
+end
 #############################################
 # Tier 2 con un 30%
 #############################################
-when (40...70) 
+when (41...71) 
 	result = rand(10)
-   if (0...5).include?(result)
-    itemReward(:GREATBALL,1)
-    else
-    itemReward(:FULLHEAL,1)
-    end
-   end
+if (0...5).include?(result)
+itemReward(:GREATBALL,1)
+else
+itemReward(:SUPERPOTION,1)
+end
 #############################################
 # Tier 3 con un 20%
 #############################################
-when (70...90) 
+when (71...91) 
 	result = rand(10)
-   if (0...5).include?(result)
-    itemReward(:ULTRABALL,1)
-    else
-    itemReward(:FULLHEAL,1)
-    end
-   end
+if (0...5).include?(result)
+itemReward(:ULTRABALL,1)
+else
+itemReward(:HYPERPOTION,1)
+end
 #############################################
-# Tier 4 con un 10%
+# Tier 4 con un 9%
 #############################################
-when (90...100) 
-	result = rand(9)
-   if (0...3).include?(result)
-    poke = PokeBattle_Pokemon.new(:CLEFAIRY, 20, $Trainer)
-    poke.iv = [16, 17, 14, 13, 10, 6]
-    poke.pbLearnMove(:CELEBRATE)
-    poke.pbLearnMove(:POUND)
-    poke.pbLearnMove(:SWEETKISS)
-    poke.pbLearnMove(:METRONOME)
-    poke.setNature(:JOLLY)
-    poke.setItem(:AMULETCOIN)
-    poke.setAbility(0)
-    poke.calcStats
-    pokeReward(poke, 4)
-    elsif (3...6).include?(result)
-    poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
-    poke.iv = [18, 15, 21, 2, 9, 30]
-    poke.pbLearnMove(:CELEBRATE)
-    poke.pbLearnMove(:SPARK)
-    poke.pbLearnMove(:THUNDERSHOCK)
-    poke.pbLearnMove(:QUICKATTACK)
-    poke.setNature(:JOLLY)
-    poke.setItem(:AMULETCOIN)
-    poke.setAbility(0)
-    poke.calcStats
-    pokeReward(poke, 4)
-    else
-    poke = PokeBattle_Pokemon.new(:RIOLU, 20, $Trainer)
-    poke.iv = [14, 10, 19, 15, 19, 31]
-    poke.pbLearnMove(:CELEBRATE)
-    poke.pbLearnMove(:QUICKATTACK)
-    poke.pbLearnMove(:FEINT)
-    poke.pbLearnMove(:ENDURE)
-    poke.setNature(:JOLLY)
-    poke.setItem(:AMULETCOIN)
-    poke.setAbility(0)
-    poke.calcStats
-     end
-   end
+when (91...100) 
+	result = rand(10)
+if (0...3).include?(result)
+poke = PokeBattle_Pokemon.new(:CLEFAIRY, 20, $Trainer)
+      poke.iv = [16, 17, 14, 13, 10, 6]
+      poke.pbLearnMove(:CELEBRATE)
+      poke.pbLearnMove(:POUND)
+      poke.pbLearnMove(:SWEETKISS)
+      poke.pbLearnMove(:METRONOME)
+      poke.setNature(:JOLLY)
+      poke.setItem(:AMULETCOIN)
+      poke.setAbility(0)
+      poke.calcStats
+      pokeReward(poke, 4)
+elsif (3...6).include?(result)
+poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
+      poke.iv = [18, 15, 21, 2, 9, 30]
+      poke.pbLearnMove(:CELEBRATE)
+      poke.pbLearnMove(:SPARK)
+      poke.pbLearnMove(:THUNDERSHOCK)
+      poke.pbLearnMove(:QUICKATTACK)
+      poke.setNature(:JOLLY)
+      poke.setItem(:AMULETCOIN)
+      poke.setAbility(0)
+      poke.calcStats
+      pokeReward(poke, 4)
+else
+      poke = PokeBattle_Pokemon.new(:RIOLU, 20, $Trainer)
+      poke.iv = [14, 10, 19, 15, 19, 31]
+      poke.pbLearnMove(:CELEBRATE)
+      poke.pbLearnMove(:QUICKATTACK)
+      poke.pbLearnMove(:FEINT)
+      poke.pbLearnMove(:ENDURE)
+      poke.setNature(:JOLLY)
+      poke.setItem(:AMULETCOIN)
+      poke.setAbility(0)
+      poke.calcStats
  end
+end
