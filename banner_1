@@ -1,31 +1,28 @@
 prob = rand(100)
 case prob
 #############################################
-# COMÚN con un 45%
+# Tier 1 con un 35%
 #############################################
-when (0...45)
-  result = rand(2)  # Genera 0 o 1
-  if result == 0
+when (0...35)
+  if rand(2) == 0
     itemReward(:POKEBALL)
   else
     itemReward(:SUPERPOTION)
   end
 #############################################
-# RARO con un 30%
+# Tier 2 con un 40%
 #############################################
-when (45...75)
-  result = rand(2)
-  if result == 0
+when (35...75)
+  if rand(2) == 0
     itemReward(:GREATBALL)
   else
     itemReward(:FULLHEAL)
   end
 #############################################
-# ÉPICO con un 15%
+# Tier 3 con un 15%
 #############################################
 when (75...90)
-  result = rand(2)
-  if result == 0
+  if rand(2) == 0
     poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
     pokeReward(poke, 3)
   else
@@ -33,11 +30,10 @@ when (75...90)
     pokeReward(poke, 3)
   end
 #############################################
-# LEGENDARIO con un 10%
+# Tier 4 con un 7%
 #############################################
-when (90...100)
-  result = rand(2)
-  if result == 0
+when (90...97)
+  if rand(2) == 0
     poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
     poke.iv = [18, 15, 21, 2, 9, 30]
     poke.pbLearnMove(:CELEBRATE)
@@ -61,5 +57,43 @@ when (90...100)
     poke.setAbility(0)
     poke.calcStats
     pokeReward(poke, 4)
+  end
+#############################################
+# Tier 5 con un 3%
+#############################################
+when (97...100)
+  result = rand(10)
+  if (0..3).include?(result)
+    poke = PokeBattle_Pokemon.new(:KANGASKHAN,20,$Trainer)
+    poke.ev[PBStats::HP]=212
+    poke.ev[PBStats::ATTACK]=252
+    poke.ev[PBStats::SPEED]=44
+    poke.setItem(:LEFTOVERS)
+    poke.setNature(:ADAMANT)
+    poke.setAbility(0)
+    poke.calcStats
+    pokeReward(poke,5)
+  elsif (4..5).include?(result)
+    poke = PokeBattle_Pokemon.new(:GYARADOS,20,$Trainer)
+    poke.ev[PBStats::HP]=68
+    poke.ev[PBStats::ATTACK]=252
+    poke.ev[PBStats::SPEED]=188
+    poke.setItem(:LEFTOVERS)
+    poke.setNature(:INTIMIDATE)
+    poke.pbLearnMove(:DRAGONDANCE)
+    poke.calcStats
+    pokeReward(poke,5)
+  elsif (6..7).include?(result)
+    poke = PokeBattle_Pokemon.new(:ABRA,20,$Trainer)
+    poke.ev[PBStats::HP]=252
+    poke.ev[PBStats::DEFENSE]=84
+    poke.ev[PBStats::SPDEF]=148
+    poke.ev[PBStats::SPEED]=24
+    poke.setNature(:CAREFUL)
+    poke.setAbility(0)
+    poke.calcStats
+    pokeReward(poke,5)
+  else
+    itemReward(:MASTERBALL,5)
   end
 end
