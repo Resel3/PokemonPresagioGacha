@@ -6,20 +6,18 @@ case prob
   when (0...40)
     if rand(2) == 0
       itemReward(:POKEBALL, 1)
-    else
+     else
       itemReward(:SUPERPOTION, 1)
     end
-
   #############################################
   # RARO
   #############################################
-  when (35...75)
+  when (40...75)
     if rand(2) == 0
       itemReward(:GREATBALL, 2)
-    else
+     else
       itemReward(:FULLHEAL, 2)
     end
-
   #############################################
   # ÉPICO
   #############################################
@@ -27,15 +25,14 @@ case prob
     if rand(2) == 0
       poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
       pokeReward(poke, 3)
-    else
+     else
       poke = PokeBattle_Pokemon.new(:SABLEYE, 20, $Trainer)
       pokeReward(poke, 3)
     end
-
   #############################################
   # LEGENDARIO
   #############################################
-  when (90...97)
+  when (90...100)
     if rand(2) == 0
       poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
       poke.iv = [18, 15, 21, 2, 9, 31]
@@ -60,7 +57,7 @@ case prob
       poke.setAbility(0)
       poke.calcStats
       pokeReward(poke, 4)
- else
+    else
       poke = PokeBattle_Pokemon.new(:RIOLU, 20, $Trainer)
       poke.iv = [14, 10, 19, 15, 19, 31]
       poke.pbLearnMove(:CELEBRATE)
@@ -73,4 +70,4 @@ case prob
       poke.calcStats
       pokeReward(poke, 4)
     end
-end
+ end
