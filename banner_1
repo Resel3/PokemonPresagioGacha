@@ -6,8 +6,6 @@ case prob
 when (0...35) 
 	result = rand(10)
 itemReward(:POKEBALL,1)
-else
-itemReward(:SUPERPOTION,1)
 #############################################
 # Tier 2 con un 40%
 #############################################
