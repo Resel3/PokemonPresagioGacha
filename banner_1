@@ -7,8 +7,8 @@ when (0...35)
 	result = rand(10)
 if (0...18).include?(result)
 itemReward(:POKEBALL,1)
-elsif (18...35).include?(result)
-itemReward(:SUPERPOTION,1)
+else
+ itemReward(:SUPERPOTION,1)
 end
 #############################################
 # Tier 2 con un 40%
