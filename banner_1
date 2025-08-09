@@ -60,6 +60,9 @@ end
       poke.setAbility(0)
       poke.calcStats
       pokeReward(poke, 4)
+  end
+ end
+end
   #############################################
   # Tier 5 con un 3%
   #############################################
