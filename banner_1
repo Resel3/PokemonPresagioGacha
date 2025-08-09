@@ -6,7 +6,7 @@ case prob
   when (0...40)
     result = rand(10)
       itemReward(:POKEBALL, 1)
-     else
+  else
       itemReward(:SUPERPOTION, 1)
     end
   #############################################
