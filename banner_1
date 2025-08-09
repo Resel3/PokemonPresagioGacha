@@ -61,7 +61,7 @@ case prob
     poke.setAbility(0)
     poke.calcStats
     pokeReward(poke, 4)
-else
+    else
     poke = PokeBattle_Pokemon.new(:RIOLU, 20, $Trainer)
     poke.iv = [14, 10, 19, 15, 19, 31]
     poke.pbLearnMove(:CELEBRATE)
