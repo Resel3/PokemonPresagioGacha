@@ -5,9 +5,9 @@ case prob
 #############################################
 when (0...35) 
 	result = rand(10)
-itemReward(:POKEBALL,4)
- else
-itemReward(:SUPERPOTION,4)
+itemReward(:POKEBALL,1)
+else
+itemReward(:SUPERPOTION,1)
 end
 #############################################
 # Tier 2 con un 40%
