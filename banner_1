@@ -14,74 +14,13 @@ scene.itemReward(:FULLHEAL,1)
 #############################################
 when (41...71) 
 	result = rand(10)
-if (0..5).include?(result)
-scene.itemReward(:GREATBALL,1)
-else
-scene.itemReward(:SUPERPOTION,1)
 #############################################
 # Tier 3 con un 20%
 #############################################
 when (71...91) 
 	result = rand(10)
-if (0..5).include?(result)
-scene.itemReward(:ULTRABALL,1)
-else
-scene.itemReward(:HYPERPOTION,1)
 #############################################
 # Tier 4 con un 9%
 #############################################
 when (91...100) 
 	result = rand(10)
-if (0..3).include?(result)
-poke = PokeBattle_Pokemon.new(:CLEFAIRY, 20, $Trainer)
-      poke.iv[0]=16
-      poke.iv[1]=17
-      poke.iv[2]=14
-      poke.iv[3]=13
-      poke.iv[4]=10
-      poke.iv[5]=6
-      poke.pbLearnMove(:CELEBRATE)
-      poke.pbLearnMove(:POUND)
-      poke.pbLearnMove(:SWEETKISS)
-      poke.pbLearnMove(:METRONOME)
-      poke.setNature(:JOLLY)
-      poke.setItem(:AMULETCOIN)
-      poke.setAbility(0)
-      poke.calcStats
-      scene.pokeReward(poke, 4)
-elsif (3..7).include?(result)
-poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
-      poke.iv[0]=18
-      poke.iv[1]=15
-      poke.iv[2]=21
-      poke.iv[3]=2
-      poke.iv[4]=9
-      poke.iv[5]=30
-      poke.pbLearnMove(:CELEBRATE)
-      poke.pbLearnMove(:SPARK)
-      poke.pbLearnMove(:THUNDERSHOCK)
-      poke.pbLearnMove(:QUICKATTACK)
-      poke.setNature(:JOLLY)
-      poke.setItem(:AMULETCOIN)
-      poke.setAbility(0)
-      poke.calcStats
-      scene.pokeReward(poke, 4)
-else
-      poke = PokeBattle_Pokemon.new(:RIOLU, 20, $Trainer)
-      poke.iv[0]=14
-      poke.iv[1]=10
-      poke.iv[2]=19
-      poke.iv[3]=15
-      poke.iv[4]=19
-      poke.iv[5]=31
-      poke.pbLearnMove(:CELEBRATE)
-      poke.pbLearnMove(:QUICKATTACK)
-      poke.pbLearnMove(:FEINT)
-      poke.pbLearnMove(:ENDURE)
-      poke.setNature(:JOLLY)
-      poke.setItem(:AMULETCOIN)
-      poke.setAbility(0)
-      poke.calcStats
-      scene.pokeReward(poke, 4)
- end
-end
