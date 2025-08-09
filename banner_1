@@ -4,8 +4,8 @@ case prob
 # COMÚN con un 45%
 #############################################
 when (0...45)
-  result = rand(10)
-  if result < 5 # Por ejemplo, 50% de probabilidad para cada objeto
+  result = rand(2)  # Genera 0 o 1
+  if result == 0
     itemReward(:POKEBALL)
   else
     itemReward(:SUPERPOTION)
@@ -14,8 +14,8 @@ when (0...45)
 # RARO con un 30%
 #############################################
 when (45...75)
-  result = rand(10)
-  if result < 5
+  result = rand(2)
+  if result == 0
     itemReward(:GREATBALL)
   else
     itemReward(:FULLHEAL)
@@ -24,8 +24,8 @@ when (45...75)
 # ÉPICO con un 15%
 #############################################
 when (75...90)
-  result = rand(10)
-  if result < 5
+  result = rand(2)
+  if result == 0
     poke = PokeBattle_Pokemon.new(:ELDEGOSS, 20, $Trainer)
     pokeReward(poke, 3)
   else
@@ -36,8 +36,8 @@ when (75...90)
 # LEGENDARIO con un 10%
 #############################################
 when (90...100)
-  result = rand(10)
-  if result < 5
+  result = rand(2)
+  if result == 0
     poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
     poke.iv = [18, 15, 21, 2, 9, 30]
     poke.pbLearnMove(:CELEBRATE)
