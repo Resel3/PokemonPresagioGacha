@@ -8,7 +8,6 @@ when (0...35)
 itemReward(:POKEBALL,1)
 else
 itemReward(:SUPERPOTION,1)
-end
 #############################################
 # Tier 2 con un 40%
 #############################################
