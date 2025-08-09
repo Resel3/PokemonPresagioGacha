@@ -8,7 +8,6 @@
       itemReward(:POKEBALL, 1)
     else
       itemReward(:SUPERPOTION, 1)
-    end
   #############################################
   # Tier 2 con un 40%
   #############################################
@@ -17,7 +16,6 @@
       itemReward(:GREATBALL, 2)
     else
       itemReward(:FULLHEAL, 2)
-    end
   #############################################
   # Tier 3 con un 15%
   #############################################
@@ -57,7 +55,6 @@
       poke.setAbility(0)
       poke.calcStats
       pokeReward(poke, 4)
-    end
   #############################################
   # Tier 5 con un 3%
   #############################################
