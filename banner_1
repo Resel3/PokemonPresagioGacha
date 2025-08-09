@@ -1,5 +1,5 @@
 prob = rand(100)
-case prob
+ case prob
   #############################################
   # Tier 1 con un 40%
   #############################################
@@ -9,8 +9,8 @@ case prob
     itemReward(:POKEBALL,1)
     else
     itemReward(:SUPERPOTION,1)
+    end
    end
-  end
   #############################################
   # Tier 2 con un 30%
   #############################################
@@ -20,8 +20,8 @@ case prob
     itemReward(:GREATBALL,1)
     else
     itemReward(:FULLHEAL,1)
+    end
    end
-  end
   #############################################
   # Tier 3 con un 20%
   #############################################
@@ -31,8 +31,8 @@ case prob
     itemReward(:ULTRABALL,1)
     else
     itemReward(:FULLHEAL,1)
+    end
    end
-  end
   #############################################
   # Tier 4 con un 10%
   #############################################
@@ -73,6 +73,6 @@ case prob
     poke.setItem(:AMULETCOIN)
     poke.setAbility(0)
     poke.calcStats
-  end
+     end
+   end
  end
-end
