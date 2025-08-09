@@ -3,12 +3,12 @@ case prob
 #############################################
 # Tier 1 con un 35%
 #############################################
-when (0...35) 
+when (0...40) 
 	result = rand(10)
 if (0...5).include?(result)
 itemReward(:POKEBALL,1)
 else
-itemReward(:SUPERPOTION,1)
+itemReward(:POTION,1)
 end
 #############################################
 # Tier 2 con un 40%
