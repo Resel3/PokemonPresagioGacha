@@ -25,9 +25,9 @@ when (71...91)
 # LEGENDARIO con un 9%
 #############################################
 when (91...100)
- case result
- result = rand(10)
-  when (0..3) # 40% de probabilidad (0, 1, 2, 3)
+  result = rand(3) # Esto genera un número 0, 1 o 2
+  case result
+  when 0 # 33.3% de probabilidad
     poke = PokeBattle_Pokemon.new(:CLEFAIRY, 20, $Trainer)
     poke.iv = [16, 17, 14, 13, 10, 6]
     poke.pbLearnMove(:CELEBRATE)
@@ -39,7 +39,7 @@ when (91...100)
     poke.setAbility(0)
     poke.calcStats
     pokeReward(poke, 4)
-  when (4..7) # 40% de probabilidad (4, 5, 6, 7)
+  when 1 # 33.3% de probabilidad
     poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
     poke.iv = [18, 15, 21, 2, 9, 30]
     poke.pbLearnMove(:CELEBRATE)
@@ -51,7 +51,7 @@ when (91...100)
     poke.setAbility(0)
     poke.calcStats
     pokeReward(poke, 4)
-  else # 20% de probabilidad (8, 9)
+  when 2 # 33.3% de probabilidad
     poke = PokeBattle_Pokemon.new(:RIOLU, 20, $Trainer)
     poke.iv = [14, 10, 19, 15, 19, 31]
     poke.pbLearnMove(:CELEBRATE)
