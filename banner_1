@@ -1,9 +1,5 @@
-def banner_1
-  prob = rand(100)
-  case prob
-  when (0...41)
-    items = [:POKEBALL, :FULLHEAL]
-    result = items[rand(items.length)]
-    itemReward(result,1)
-  end
+prob = rand(100)
+case prob
+when (0...100)
+  itemReward(:POKEBALL, 1)
 end
