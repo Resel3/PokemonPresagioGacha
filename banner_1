@@ -18,4 +18,4 @@ def gachaponRead
     result = items[rand(items.length)]
     scene.itemReward(result,4)
   end
-end
+ end
