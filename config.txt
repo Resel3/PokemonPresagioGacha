@@ -10,7 +10,7 @@ BANNERS  = {
 Clefairy de celebración 3%</c>
 
 No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
-              }
+              },
         "banner_2" => {
               "name" => "POKÉMON EX",
               "bg" => "Graphics/Pictures/Terranova",
@@ -23,6 +23,7 @@ Zebstrika 3%\nMachamp 10%</c>\n<c=FF0000FF>SINGULARIDAD</c>\n<c=000000FF>Excadri
 
 No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
       }
+
 
 
 
