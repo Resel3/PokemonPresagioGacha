@@ -1,31 +1,31 @@
 prob = rand(100)
 case prob
 #############################################
-# Tier 1 con un 41%
+# COMUN con un 41%
 #############################################
 when (0...41) 
   items = [:POKEBALL, :FULLHEAL]
   result = items[rand(items.length)]
   itemReward(result,1)
 #############################################
-# Tier 2 con un 15%
+# RARO con un 15%
 #############################################
 when (41...56) 
   itemreward=[PBItems::GREATBALL]
   result = items[rand(items.length)]
 #############################################
-# Tier 2 con un 30%
+# RARO con un 15%
 #############################################
 when (56...71) 
   itemreward=[PBItems::SUPERPOTION]
   result = items[rand(items.length)]
 #############################################
-# Tier 3 con un 20%
+# ÉPICO con un 20%
 #############################################
 when (71...91) 
    result = rand(10)
 #############################################
-# Tier 4 con un 9%
+# LEGENDARIO con un 9%
 #############################################
 when (91...100) 
    result = rand(10)
