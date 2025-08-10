@@ -11,7 +11,9 @@ when (0...41)
 # Tier 2 con un 30%
 #############################################
 when (41...71) 
-   result = rand(10)
+  items = [:GREATBALL, :SUPERPOTION]
+  result = items[rand(items.length)]
+  itemReward(result,1)
 #############################################
 # Tier 3 con un 20%
 #############################################
