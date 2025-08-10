@@ -11,14 +11,9 @@ when (0...41)
 # RARO con un 15%
 #############################################
 when (41...56) 
-  itemreward=[PBItems::GREATBALL]
+  items = [:GREATBALL, :SUPERPOTION]
   result = items[rand(items.length)]
-#############################################
-# RARO con un 15%
-#############################################
-when (56...71) 
-  itemreward=[PBItems::SUPERPOTION]
-  result = items[rand(items.length)]
+  itemReward(result,1)
 #############################################
 # ÉPICO con un 20%
 #############################################
