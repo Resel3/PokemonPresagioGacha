@@ -16,13 +16,14 @@ No nos hacemos responsables de los problemas que puedan surgir a partir de este 
               "bg" => "Graphics/Pictures/Terranova",
               "rewards" => ["Graphics/Battlers/Front/530","Graphics/Battlers/Front/663","Graphics/Battlers/Front/282"],
               "stars" => [5, 5, 5],
-              "url" => "https://resel3.github.io/PokemonPresagioGacha/banner_2",
+              "url" => nil,
               "descr" =>  "¡Los Pokémon que llevarán a los mejores entrenadores a la gloria! Juega con la probabilidad de obtener un Pokémon EX, el cual posee 31 IVS en cada característica y un movimiento que no podría aprender bajo circunstancias normales.\n<u>Premios disponibles:</u>\n<c=008000FF>COMÚN</c>\n<c=000000FF>Super Ball 20.5%\nCura Total 20.5%</c>\n<c=0000FFFF>RARO</c>
 <c=000000FF>Ultra Ball 15%\nRevivir 15%\n</c>\n<c=800080FF>ÉPICO</c>\n<c=000000FF>Eldegoss 10%\nDoublade 10%\nElectabuzz 10%\nNinjask 10%\nLuxio 10%</c>\n<c=FFA500FF>LEYENDA</c>\n<c=000000FF>Golduck 3%\nLycanrock 3%
 Zebstrika 3%\nMachamp 10%</c>\n<c=FF0000FF>SINGULARIDAD</c>\n<c=000000FF>Excadrill con Hidroariete\nTalonflame con Terremoto\nGardevoir con Esfera Aural</c>
 
 No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
       }
+
 
 
 
