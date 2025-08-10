@@ -13,7 +13,7 @@ when (0...41)
 when (41...71) 
   items = [:GREATBALL, :SUPERPOTION]
   result = items[rand(items.length)]
-  itemReward(result,1)
+  itemReward(result,2)
 #############################################
 # Tier 3 con un 20%
 #############################################
