@@ -10,9 +10,9 @@
 Clefairy de celebración 3.3%</c>
 
 No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
-
-              }
       }
+      }
+
 
 
 
