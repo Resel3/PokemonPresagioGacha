@@ -1,4 +1,4 @@
-def gachaponRead
+def banner_1
   prob = rand(100)
   case prob
   when (0...41)
