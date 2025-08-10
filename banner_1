@@ -4,9 +4,9 @@ case prob
 # Tier 1 con un 41%
 #############################################
 when (0...41) 
- items = [:POKEBALL, :FULLHEAL]
- result = items[rand(items.length)]
- itemReward(result,1)
+  items = [:POKEBALL, :FULLHEAL]
+  result = items[rand(items.length)]
+  itemReward(result,1)
 #############################################
 # Tier 2 con un 30%
 #############################################
