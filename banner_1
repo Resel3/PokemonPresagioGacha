@@ -1,32 +1,21 @@
-prob = rand(100)
-case prob
-#############################################
-# COMUN con un 41%
-#############################################
-when (0...41) 
-  items = [:POKEBALL, :FULLHEAL]
-  result = items[rand(items.length)]
-  itemReward(result,1)
-#############################################
-# RARO con un 15%
-#############################################
-when (41...71) 
-  items = [:GREATBALL, :SUPERPOTION]
-  result = items[rand(items.length)]
-  itemReward(result,2)
-#############################################
-# ÉPICO con un 20%
-#############################################
-when (71...91) 
-   items = [:ULTRABALL, :HYPERPOTION]
-   result = items[rand(items.length)]
-   itemReward(result,3)
-#############################################
-# LEGENDARIO con un 9%
-#############################################
-when (91...100) 
-  items = [:ULTRABALL, :HYPERPOTION]
-  result = items[rand(items.length)]
-  itemReward(result,4)
-end
+def Bannerlanzamiento
+  prob = rand(100)
+  case prob
+  when (0...41)  # 41%
+    items = [:POKEBALL, :FULLHEAL]
+    result = items[rand(items.length)]
+    itemReward(result,1)
+  when (41...71)  # 30%
+    items = [:GREATBALL, :SUPERPOTION]
+    result = items[rand(items.length)]
+    itemReward(result,2)
+  when (71...91)  # 20%
+    items = [:ULTRABALL, :HYPERPOTION]
+    result = items[rand(items.length)]
+    itemReward(result,3)
+  when (91...100) # 9%
+    items = [:MASTERBALL, :RARECANDY]
+    result = items[rand(items.length)]
+    itemReward(result,4)
+  end
 end
