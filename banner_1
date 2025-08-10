@@ -27,6 +27,6 @@ when (71...91)
 when (91...100) 
   items = [:ULTRABALL, :HYPERPOTION]
   result = items[rand(items.length)]
-  scene.itemReward(result,1)
- end
+  itemReward(result,1)
+end
 end
