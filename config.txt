@@ -18,12 +18,13 @@ No nos hacemos responsables de los problemas que puedan surgir a partir de este 
               "stars" => [5, 5, 5],
               "url" => nil,
               "descr" =>  "¡LOS POKÉMON QUE LLEVARAN A CUALQUIER ENTRENADOR A LA GLORIA!\nJuega con la probabilidad de obtener un Pokémon EX, el cual posee 31 IVS en cada característica y un movimiento que no podría aprender bajo circunstancias normales.\n<u>Premios disponibles:</u>\n<c=008000FF>COMÚN</c>\n<c=000000FF>Super Ball 22.5%\nCura Total 22.5%</c>\n<c=0000FFFF>RARO</c>
-<c=000000FF>Ultra Ball 15%\nRevivir 15%\n</c>\n<c=800080FF>ÉPICO</c>\n<c=000000FF>Eldegoss 3%\nDoublade 3%\nElectabuzz 3%\nNinjask 3%\nLuxio 3%</c>\n<c=FFA500FF>LEYENDA</c>\n<c=000000FF>Golduck 1.75%\nLycanrock 1.75%
+<c=000000FF>Ultra Ball 15%\nRevivir 15%\n</c><c=800080FF>ÉPICO</c>\n<c=000000FF>Eldegoss 3%\nDoublade 3%\nElectabuzz 3%\nNinjask 3%\nLuxio 3%</c>\n<c=FFA500FF>LEYENDA</c>\n<c=000000FF>Golduck 1.75%\nLycanrock 1.75%
 Zebstrika 1.75%\nMachamp 1.75%</c>\n<c=FF0000FF>SINGULARIDAD</c>\n<c=000000FF>Excadrill con Hidroariete 1%\nTalonflame con Terremoto 1%\nGardevoir con Esfera Aural 1%</c>
 
 No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
             }
       }
+
 
 
 
