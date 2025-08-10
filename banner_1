@@ -25,7 +25,41 @@ when (71...91)
 # LEGENDARIO con un 9%
 #############################################
 when (91...100)
-  items = [:MASTERBALL, :RARECANDY]
-  result = items[rand(items.length)]
-  itemReward(result,4)
+if (0..3).include?(result) # Cubre los resultados 0, 1, 2, 3 (40%)
+    poke = PokeBattle_Pokemon.new(:CLEFAIRY, 20, $Trainer)
+    poke.iv = [16, 17, 14, 13, 10, 6]
+    poke.pbLearnMove(:CELEBRATE)
+    poke.pbLearnMove(:POUND)
+    poke.pbLearnMove(:SWEETKISS)
+    poke.pbLearnMove(:METRONOME)
+    poke.setNature(:JOLLY)
+    poke.setItem(:AMULETCOIN)
+    poke.setAbility(0)
+    poke.calcStats
+    pokeReward(poke, 4)
+  elsif (4..7).include?(result) # Cubre los resultados 4, 5, 6, 7 (40%)
+    poke = PokeBattle_Pokemon.new(:PIKACHU, 20, $Trainer)
+    poke.iv = [18, 15, 21, 2, 9, 30]
+    poke.pbLearnMove(:CELEBRATE)
+    poke.pbLearnMove(:SPARK)
+    poke.pbLearnMove(:THUNDERSHOCK)
+    poke.pbLearnMove(:QUICKATTACK)
+    poke.setNature(:JOLLY)
+    poke.setItem(:AMULETCOIN)
+    poke.setAbility(0)
+    poke.calcStats
+    pokeReward(poke, 4)
+  else # Cubre los resultados 8 y 9 (20%)
+    poke = PokeBattle_Pokemon.new(:RIOLU, 20, $Trainer)
+    poke.iv = [14, 10, 19, 15, 19, 31]
+    poke.pbLearnMove(:CELEBRATE)
+    poke.pbLearnMove(:QUICKATTACK)
+    poke.pbLearnMove(:FEINT)
+    poke.pbLearnMove(:ENDURE)
+    poke.setNature(:JOLLY)
+    poke.setItem(:AMULETCOIN)
+    poke.setAbility(0)
+    poke.calcStats
+    pokeReward(poke, 4)
+ end
 end
