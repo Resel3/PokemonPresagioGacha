@@ -22,7 +22,9 @@ No nos hacemos responsables de los problemas que puedan surgir a partir de este 
 Zebstrika 3%\nMachamp 10%</c>\n<c=FF0000FF>SINGULARIDAD</c>\n<c=000000FF>Excadrill con Hidroariete\nTalonflame con Terremoto\nGardevoir con Esfera Aural</c>
 
 No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
+            }
       }
+
 
 
 
