@@ -2,6 +2,7 @@ BANNERS  = {
       "banner_1" => {
               "name" => "ESPECIAL LANZAMIENTO DEL JUEGO",
               "bg" => "Graphics/Pictures/Terranova",
+              "fondo" => "Graphics/Pictures/Gacha/Fondocelebracion",
               "rewards" => ["Graphics/Battlers/Front/025","Graphics/Battlers/Front/447","Graphics/Battlers/Front/035"],
               "stars" => [4, 4, 4],
               "url" => "https://resel3.github.io/PokemonPresagioGacha/banner_1",
