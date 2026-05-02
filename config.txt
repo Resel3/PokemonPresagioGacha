@@ -1,6 +1,6 @@
 BANNERS  = {
       "banner_1" => {
-              "name" => "ESPECIAL LANZAMIENTO DEL JUEGO",
+              "name" => "",
               "bg" => "Graphics/Pictures/Gacha/Fondocelebracion",
               "fondo" => "Graphics/Pictures/Gacha/Fondocelebracion",
               "rewards" => ["Graphics/Battlers/Front/025","Graphics/Battlers/Front/447","Graphics/Battlers/Front/035"],
