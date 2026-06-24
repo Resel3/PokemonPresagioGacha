@@ -6,8 +6,8 @@ BANNERS  = {
               "rewards" => ["Graphics/Battlers/Front/025","Graphics/Battlers/Front/447","Graphics/Battlers/Front/035"],
               "stars" => [4, 4, 4],
               "url" => "https://resel3.github.io/PokemonPresagioGacha/banner_1",
-              "descr" =>  "¡BANNER DE TIEMPO LIMITADO POR EL LANZAMIENTO DEL JUEGO!\nDisponible hasta el <c2=043c3aff>25-2-2027</c2>\n<u>Premios disponibles:</u>\n<c=008000FF>COMÚN</c>\n<c=000000FF>Poké Ball 20.5%\nCura Total 20.5%</c>\n<c=0000FFFF>RARO</c>
-<c=000000FF>Super Ball 15%\nSuperpoción 15%\n</c>\n<c=800080FF>ÉPICO</c>\n<c=000000FF>Ultra Ball 10%\nHiperpoción 10%</c>\n<c=FFA500FF>LEYENDA</c>\n<c=000000FF>Pikachu de celebración 3%\nRiolu de celebración 3%
+              "descr" =>  "¡BANNER DE TIEMPO LIMITADO POR EL LANZAMIENTO DEL JUEGO!\nDisponible hasta el <c2=043c3aff>25-2-2027</c2>\n\n<u>Premios disponibles:</u>\n<c=008000FF>-COMÚN-</c>\n<c=000000FF>Poké Ball 20.5%\nCura Total 20.5%</c>\n\n<c=0000FFFF>-RARO-</c>
+<c=000000FF>Super Ball 15%\nSuperpoción 15%\n\n</c><c=800080FF>-ÉPICO-</c>\n<c=000000FF>Ultra Ball 10%\nHiperpoción 10%</c>\n\n<c=FFA500FF>-LEYENDA-</c>\n<c=000000FF>Pikachu de celebración 3%\nRiolu de celebración 3%
 Clefairy de celebración 3%</c>
 
 No nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
