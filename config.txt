@@ -6,7 +6,7 @@ BANNERS  = {
               "rewards" => ["Graphics/Battlers/Front/025","Graphics/Battlers/Front/447","Graphics/Battlers/Front/035"],
               "stars" => [4, 4, 4],
               "url" => "https://resel3.github.io/PokemonPresagioGacha/banner_1",
-              "descr" =>  "¡BANNER DE TIEMPO LIMITADO POR EL LANZAMIENTO DEL JUEGO!\nDisponible hasta el <c2=043c3aff>25-2-2027</c2>\n\n<u>Premios disponibles:</u>\n<c=008000FF>-COMÚN-</c>\n<c=000000FF>Poké Ball 20.5%\nCura Total 20.5%</c>\n\n<c=0000FFFF>-RARO-</c>
+              "descr" =>  "¡BANNER DE TIEMPO LIMITADO POR EL LANZAMIENTO DEL JUEGO!\nDisponible hasta el <c2=043c3aff>25-2-2027</c2>\n\n\n<u>Premios disponibles:</u>\n\n<c=008000FF>-COMÚN-</c>\n<c=000000FF>Poké Ball 20.5%\nCura Total 20.5%</c>\n\n<c=0000FFFF>-RARO-</c>
 <c=000000FF>Super Ball 15%\nSuperpoción 15%\n\n</c><c=800080FF>-ÉPICO-</c>\n<c=000000FF>Ultra Ball 10%\nHiperpoción 10%</c>\n\n<c=FFA500FF>-LEYENDA-</c>\n<c=000000FF>Pikachu de celebración 3%\nRiolu de celebración 3%
 Clefairy de celebración 3%</c>
 
@@ -19,7 +19,7 @@ No nos hacemos responsables de los problemas que puedan surgir a partir de este 
               "rewards" => ["Graphics/Battlers/Front/530","Graphics/Battlers/Front/663","Graphics/Battlers/Front/282"],
               "stars" => [5, 5, 5],
               "url" => nil,
-              "descr" =>  "¡Los Pokémon que llevarán a cualquier entrenador a la gloria!\nJuega con la probabilidad de obtener un Pokémon EX, el cual posee 31 IVS en cada característica y un movimiento que no podría aprender bajo circunstancias normales.\n<u>Premios disponibles:</u>\n<c=008000FF>COMÚN</c>\n<c=000000FF>Super Ball 20.5%\nCura Total 20.5%</c>\n<c=0000FFFF>RARO</c>\n<c=000000FF>Ultra Ball 15%\nRevivir 15%</c>\n<c=800080FF>ÉPICO</c>\n<c=000000FF>Eldegoss 10%\nDoublade 10%\nElectabuzz 10%\nNinjask 10%\nLuxio 10%</c>\n<c=FFA500FF>LEYENDA</c>\n<c=000000FF>Golduck 3%\nLycanrock 3%\nZebstrika 3%\nMachamp 10%</c>\n<c=FF0000FF>SINGULARIDAD</c>\n<c=000000FF>Excadrill con Hidroariete\nTalonflame con Terremoto\nGardevoir con Cometa Draco</c>\nNo nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
+              "descr" =>  "¡Los Pokémon que llevarán a cualquier entrenador a la gloria!\nJuega con la probabilidad de obtener un Pokémon EX, el cual posee 31 IVS en cada característica y un movimiento que no podría aprender bajo circunstancias normales.\n\n<u>Premios disponibles:</u>\n\n<c=008000FF>-COMÚN-</c>\n<c=000000FF>Super Ball 20.5%\nCura Total 20.5%</c>\n\n<c=0000FFFF>-RARO-</c>\n<c=000000FF>Ultra Ball 15%\nRevivir 15%</c>\n\n<c=800080FF>-ÉPICO-</c>\n<c=000000FF>Eldegoss 10%\nDoublade 10%\nElectabuzz 10%\nNinjask 10%\nLuxio 10%</c>\n\n<c=FFA500FF>-LEYENDA-</c>\n<c=000000FF>Golduck 3%\nLycanrock 3%\nZebstrika 3%\nMachamp 10%</c>\n<c=FF0000FF>SINGULARIDAD</c>\n<c=000000FF>Excadrill con Hidroariete\nTalonflame con Terremoto\nGardevoir con Cometa Draco</c>\n\nNo nos hacemos responsables de los problemas que puedan surgir a partir de este juego. Juegue con responsabilidad."
             }
       }
 
